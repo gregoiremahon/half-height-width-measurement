@@ -9,7 +9,7 @@ def proceed():
     # loading files 
     data = []
 
-    for root, dirs, files in os.walk("C:/Users/gregm/OneDrive/iUMTEK/Mesures laser/Mesures shutter/Traces"):
+    for root, dirs, files in os.walk("FILES_DIR"):
         for name in files:
             M = pd.read_csv(os.path.join(root, name) ).values 
             data.append(M)
